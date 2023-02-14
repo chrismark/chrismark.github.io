@@ -1,0 +1,2130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link 
+     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" 
+     rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" type="text/css" href="src/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" integrity="sha512-uCQmAoax6aJTxC03VlH0uCEtE0iLi83TW1Qh6VezEZ5Y17rTrIE+8irz4H4ehM7Fbfbm8rb30OkxVkuwhXxrRg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="src/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header>
+        
+        <div class="wrapper">
+          <a id="nav-logo" href="/"><img src="src/assets/test-site.svg" /></a>
+          <a id="dropdown-toggle"><i class="bx bx-chevron-right bx-md" id="arrow"></i></a>
+          <nav class="main-nav dropdown" id="main-nav">
+            <ul>
+              <li><a href="/home">Home</a></li>
+              <li><a href="/genre">Genre</a></li>
+              <li><a href="/country">Country</a></li>
+              <li><a href="/movies">Movies</a></li>
+              <li><a href="/tv-series">TV Series</a></li>
+              <li><a href="/top-imdb">Top IMDb</a></li>
+            </ul>
+          </nav>
+          <form class="search-field">
+            <input type="text" name="search" autocomplete="off" />
+            <button><i class="bx bx-search"></i></button>
+          </form>
+        </div>
+      </header>
+
+      <main>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" style="background: url(https://static.bunnycdn.ru/i/cache/images/0/07/07adae3f3dbd7212da64c67b95cc46de.jpg); background-size: cover; background-repeat: no-repeat;">
+              <div class="movie-info">
+                <h3>Black Panther: Wakanda Forever</h3>
+                <div class="movie-meta">
+                  <span class="movie-quality"><span>HD</span></span>
+                  <span class="movie-rating"><i class="bx bxs-star"></i> 6.90</span>
+                  <span class="movie-length">161 min</span>
+                  <span class="movie-genre">
+                    <a href="/genre/drama" title="Drama">Drama</a>
+                    <a href="/genre/adventure" title="Adventure">Adventure</a>
+                    <a href="/genre/action" title="Action">Action</a>
+                  </span>
+                </div>
+                <div class="movie-description">The people of Wakanda fight to protect their home from intervening world powers as they mourn the death of King T&apos;Challa.</div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background: url(https://static.bunnycdn.ru/i/cache/images/6/67/6772c079bb8d2b8dc6e28ddc51f5332b.jpg); background-size: cover; background-repeat: no-repeat;">
+              <div class="movie-info">
+                <h3>Avatar: The Way of Water</h3>
+                <div class="movie-meta">
+                  <span class="movie-quality">SD</span>
+                  <span class="movie-rating"><i class="bx bxs-star"></i> 7.80</span>
+                  <span class="movie-length">192 min</span>
+                  <span class="movie-genre">
+                    <a href="/genre/adventure" title="Adventure">Adventure</a>
+                    <a href="/genre/action" title="Action">Action</a>
+                    <a href="/genre/fantasy" title="Fantasy">Fantasy</a>
+                  </span>
+                </div>
+                <div class="movie-description">Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na&apos;vi race to protect their home.</div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background: url(https://static.bunnycdn.ru/i/cache/images/1/13/13df770c1376844e0b65e7566b0b80ae.jpg); background-size: cover; background-repeat: no-repeat;">
+              <div class="movie-info">
+                <h3>Black Adam</h3>
+                <div class="movie-meta">
+                  <span class="movie-quality">HD</span>
+                  <span class="movie-rating"><i class="bx bxs-star"></i> 6.40</span>
+                  <span class="movie-length">125 min</span>
+                  <span class="movie-genre">
+                    <a href="/genre/sci-fi" title="Sci-Fi">Sci-Fi</a>
+                    <a href="/genre/action" title="Action">Action</a>
+                    <a href="/genre/fantasy" title="Fantasy">Fantasy</a>
+                  </span>
+                </div>
+                <div class="movie-description">Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods--and imprisoned just as quickly--Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world.</div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background: url(https://static.bunnycdn.ru/i/cache/images/f/f9/f928018f1ca6fdb914bbd72209978f30.jpg); background-size: cover; background-repeat: no-repeat;">
+              <div class="movie-info">
+                <h3>Top Gun: Maverick</h3>
+                <div class="movie-meta">
+                  <span class="movie-quality">HD</span>
+                  <span class="movie-rating"><i class="bx bxs-star"></i> 8.30</span>
+                  <span class="movie-length">130 min</span>
+                  <span class="movie-genre">
+                    <a href="/genre/drama" title="Drama">Drama</a>
+                    <a href="/genre/action" title="Action">Action</a>
+                  </span>
+                </div>
+                <div class="movie-description">After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN&amp;apos;s elite graduates on a mission that demands the ultimate sacrifice from those chosen to ...</div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background: url(https://static.bunnycdn.ru/i/cache/images/3/32/326b491508acc08f6a06c4b39985af4a.jpg); background-size: cover; background-repeat: no-repeat;">
+              <div class="movie-info">
+                <h3>Avengers: Infinity War</h3>
+                <div class="movie-meta">
+                  <span class="movie-quality">HD</span>
+                  <span class="movie-rating"><i class="bx bxs-star"></i> 8.40</span>
+                  <span class="movie-length">149 min</span>
+                  <span class="movie-genre">
+                    <a href="/genre/sci-fi" title="Sci-Fi">Sci-Fi</a>
+                    <a href="/genre/adventure" title="Adventure">Adventure</a>
+                    <a href="/genre/action" title="Action">Action</a>
+                    <a href="/genre/fantasy" title="Fantasy">Fantasy</a>
+                  </span>
+                </div>
+                <div class="movie-description">The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.</div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background: url(https://static.bunnycdn.ru/i/cache/images/7/75/755d17850d292cb3b763e5ebe717a728.jpg); background-size: cover; background-repeat: no-repeat;">
+              <div class="movie-info">
+                <h3>Bullet Train</h3>
+                <div class="movie-meta">
+                  <span class="movie-quality">HD</span>
+                  <span class="movie-rating"><i class="bx bxs-star"></i> 7.30</span>
+                  <span class="movie-length">127 min</span>
+                  <span class="movie-genre">
+                    <a href="/genre/thriller" title="Thriller">Thriller</a>
+                    <a href="/genre/comedy" title="Comedy">Comedy</a>
+                    <a href="/genre/action" title="Action">Action</a>
+                  </span>
+                </div>
+                <div class="movie-description">Five assassins aboard a swiftly-moving bullet train find out that their missions have something in common.</div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background: url(https://static.bunnycdn.ru/i/cache/images/8/86/86a0c794d7bb48e8706a69c45d2cc389.jpg); background-size: cover; background-repeat: no-repeat;">
+              <div class="movie-info">
+                <h3>Avengers: Endgame</h3>
+                <div class="movie-meta">
+                  <span class="movie-quality">HD</span>
+                  <span class="movie-rating"><i class="bx bxs-star"></i> 8.40</span>
+                  <span class="movie-length">181 min</span>
+                  <span class="movie-genre">
+                    <a href="/genre/sci-fi" title="Sci-Fi">Sci-Fi</a>
+                    <a href="/genre/adventure" title="Adventure">Adventure</a>
+                    <a href="/genre/action" title="Action">Action</a>
+                    <a href="/genre/fantasy" title="Fantasy">Fantasy</a>
+                  </span>
+                </div>
+                <div class="movie-description">After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos&apos; actions and restore balance to the universe.</div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background: url(https://static.bunnycdn.ru/i/cache/images/5/5a/5a55900d896a5f4e63f11ed100701a4a.jpg); background-size: cover; background-repeat: no-repeat;">
+              <div class="movie-info">
+                <h3>Thor: Love and Thunder</h3>
+                <div class="movie-meta">
+                  <span class="movie-quality">HD</span>
+                  <span class="movie-rating"><i class="bx bxs-star"></i> 6.30</span>
+                  <span class="movie-length">118 min</span>
+                  <span class="movie-genre">
+                    <a href="/genre/comedy" title="Comedy">Comedy</a>
+                    <a href="/genre/adventure" title="Adventure">Adventure</a>
+                    <a href="/genre/action" title="Action">Action</a>
+                  </span>
+                </div>
+                <div class="movie-description">Thor enlists the help of Valkyrie, Korg and ex-girlfriend Jane Foster to fight Gorr the God Butcher, who intends to make the gods extinct.</div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background: url(https://static.bunnycdn.ru/i/cache/images/c/ce/ce56e78d40871d2abf8c014013f3d4de.jpg); background-size: cover; background-repeat: no-repeat;">
+              <div class="movie-info">
+                <h3>Spider-Man: No Way Home</h3>
+                <div class="movie-meta">
+                  <span class="movie-quality">HD</span>
+                  <span class="movie-rating"><i class="bx bxs-star"></i> 8.20</span>
+                  <span class="movie-length">148 min</span>
+                  <span class="movie-genre">
+                    <a href="/genre/sci-fi" title="Sci-Fi">Sci-Fi</a>
+                    <a href="/genre/adventure" title="Adventure">Adventure</a>
+                    <a href="/genre/action" title="Action">Action</a>
+                    <a href="/genre/fantasy" title="Fantasy">Fantasy</a>
+                  </span>
+                </div>
+                <div class="movie-description">With Spider-Man&apos;s identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.</div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background: url(https://static.bunnycdn.ru/i/cache/images/0/08/087ed3e83b54cc1864090c568e5d9564.jpg); background-size: cover; background-repeat: no-repeat;">
+              <div class="movie-info">
+                <h3>The Batman</h3>
+                <div class="movie-meta">
+                  <span class="movie-quality"><span>HD</span></span>
+                  <span class="movie-rating"><i class="bx bxs-star"></i> 7.80</span>
+                  <span class="movie-length">176 min</span>
+                  <span class="movie-genre">
+                    <a href="/genre/drama" title="Drama">Drama</a>
+                    <a href="/genre/action" title="Action">Action</a>
+                    <a href="/genre/crime" title="Crime">Crime</a>
+                  </span>
+                </div>
+                <div class="movie-description">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city&amp;apos;s hidden corruption and question his family&amp;apos;s involvement.</div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        
+      </main>
+      <div class="listings" style="flex-grow: 1; ">
+        <section class="section-recommendations">
+          <div class="section-heading">
+            <h2>Recommendations</h2>
+            <div class="filter-types">
+              <a class="filter-type-btn movies selected"><i class="bx bx-movie-play" title="Movies"></i> Movies</a>
+              <a class="filter-type-btn tv-shows"><i class="bx bx-tv" title="TV Shows"></i> TV Shows</a>
+              <a class="filter-type-btn trending"><i class="bx bx-trending-up" title="Trending"></i> Trending</a>
+            </div>
+          </div>
+          <div class="section-content movies show">
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c1/c1a10f1aabf9e39b89fa76c5e5293e32.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/teen-wolf-the-movie-5wj50" title="Teen Wolf: The Movie">Teen Wolf: The Movie</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">140 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+          </div>
+          <div class="section-content tv-shows">
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+          </div>
+          <div class="section-content trending">
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/plane-zkv5w" title="Plane">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c7/c733e98213d9828875eb9de6a450434b.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/plane-zkv5w" title="Plane">Plane</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">107 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/plane-zkv5w" title="Plane">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c7/c733e98213d9828875eb9de6a450434b.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/plane-zkv5w" title="Plane">Plane</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">107 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/plane-zkv5w" title="Plane">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c7/c733e98213d9828875eb9de6a450434b.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/plane-zkv5w" title="Plane">Plane</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">107 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/plane-zkv5w" title="Plane">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c7/c733e98213d9828875eb9de6a450434b.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/plane-zkv5w" title="Plane">Plane</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">107 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/plane-zkv5w" title="Plane">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c7/c733e98213d9828875eb9de6a450434b.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/plane-zkv5w" title="Plane">Plane</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">107 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/plane-zkv5w" title="Plane">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c7/c733e98213d9828875eb9de6a450434b.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/plane-zkv5w" title="Plane">Plane</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">107 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/plane-zkv5w" title="Plane">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c7/c733e98213d9828875eb9de6a450434b.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/plane-zkv5w" title="Plane">Plane</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">107 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/plane-zkv5w" title="Plane">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c7/c733e98213d9828875eb9de6a450434b.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/plane-zkv5w" title="Plane">Plane</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">107 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/plane-zkv5w" title="Plane">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c7/c733e98213d9828875eb9de6a450434b.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/plane-zkv5w" title="Plane">Plane</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">107 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/plane-zkv5w" title="Plane">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c7/c733e98213d9828875eb9de6a450434b.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/plane-zkv5w" title="Plane">Plane</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">107 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/plane-zkv5w" title="Plane">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c7/c733e98213d9828875eb9de6a450434b.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/plane-zkv5w" title="Plane">Plane</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">107 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/plane-zkv5w" title="Plane">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c7/c733e98213d9828875eb9de6a450434b.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/plane-zkv5w" title="Plane">Plane</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">107 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/plane-zkv5w" title="Plane">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c7/c733e98213d9828875eb9de6a450434b.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/plane-zkv5w" title="Plane">Plane</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">107 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/plane-zkv5w" title="Plane">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c7/c733e98213d9828875eb9de6a450434b.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/plane-zkv5w" title="Plane">Plane</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">107 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/plane-zkv5w" title="Plane">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/c/c7/c733e98213d9828875eb9de6a450434b.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/plane-zkv5w" title="Plane">Plane</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2023</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">107 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-container section-latest-movies">
+          <div class="section-heading">
+            <h2>Latest Movies</h2>
+          </div>
+          <div class="section-content">
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-container section-latest-tv-shows">
+          <div class="section-heading">
+            <h2>Latest TV Shows</h2>
+          </div>
+          <div class="section-content">
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/6/6f/6f930d94934dee2d18bacc38497c52c7.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/the-last-of-us-x1qo8" title="The Last Of Us">The Last Of Us</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">SS 1</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">EP 5</span>
+                <span class="movie-tag">TV</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-container section-requested">
+          <div class="section-heading">
+            <h2>Requested</h2>
+          </div>
+          <div class="section-content">
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+            <div class="listing-movie-info">
+              <a class="movie-img" href="/movie/m3gan-41m0k" title="M3gan">
+                <span class="movie-quality">HD</span>
+                <i class="bx bx-play"></i>
+                <img src="https://static.bunnycdn.ru/i/cache/images/8/86/86c3bc63f007e85ac0cee7891ba1e68d.jpg-w180" />
+              </a>
+              <h3 class="movie-title"><a href="/movie/m3gan-41m0k" title="M3gan">M3gan</a></h3>
+              <div class="movie-meta">
+                <span class="movie-year">2022</span>
+                <i class="bx bxs-circle"></i>
+                <span class="movie-length">102 mins</span>
+                <span class="movie-tag">Movie</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div id="footer-content">
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/site-map">Site Map</a></li>
+              <li><a href="/about-us">About Us</a></li>
+            </ul>
+          </nav>
+          <p class="copyright text-center text-muted">&copy; Test Site</p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js" integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+      const swiper = new Swiper('.swiper', {
+        autoplay: {
+          delay: 5000,
+        },
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
+  </body>
+  
+</html>
