@@ -197,6 +197,7 @@ header form.search-field {
   flex-grow: 1;
   background:rgba(255, 255, 255, 0.178);
   border-radius: 50rem;
+  align-self: center;
   padding: 5px 10px 5px;
   margin-right: 15px;
   transition: all .2s ease-out;
@@ -235,7 +236,6 @@ header form.search-field input {
 }
 header form.search-field button {
   flex-grow: .5;
-  
 }
 header form.search-field button i {
   font-size: 20pt;

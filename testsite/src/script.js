@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Make sure dropdown menu is 'closed' when we change screen size
   // https://momane.com/articles/2022-07/how-to-detect-if-an-element-is-visible
   var observer = new IntersectionObserver(function(entries) {
+    dropdownBtn.ariaHidden = !entries[0].isIntersecting;
     if (!entries[0].isIntersecting) {
       // when dropmenu arrow is not visible, we check if dropdown is still 'visible'
       // or has class 'show', if yes we toggle to hide it
