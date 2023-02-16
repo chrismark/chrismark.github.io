@@ -57,12 +57,12 @@ p, h1, h2, h3, h4, h5, h6 {
   --blue: #8d8dcc;
 
   --text-color: #f8f4f4;
-  --text-muted-color: #686666;
+  --text-muted-color: rgb(138,138,138);
 
-  --link-text-color: #bebec2;
+  --link-text-color: #ABABAF;
   --link-text-hover-color: #5d99e7;
 
-  --link-text-muted-color: #6e6e74;
+  --link-text-muted-color: rgb(138,138,138);
 
   --header-bg: #161616;
 
@@ -362,8 +362,8 @@ div.swiper-pagination span.swiper-pagination-bullet {
   display: inline-flex;
   font-size: 10pt;
   align-items: center;
-  background: rgb(86, 90, 94);
-  color: rgb(194, 194, 194);
+  background: rgb(58, 61, 64);
+  color: rgb(168, 168, 168);
   padding: 4px 9px 4px 9px;
   margin-right: 4px;
   border-radius: 3px 3px;
@@ -453,7 +453,7 @@ div.swiper-pagination span.swiper-pagination-bullet {
   font-size: 9pt;
   margin-top: -.1rem;
   letter-spacing: .7pt;
-  color:rgb(122, 122, 122);
+  color:rgb(138, 138, 138);
 }
 div.listing-movie-info div.movie-meta i.bxs-circle {
   font-size: .2rem;
