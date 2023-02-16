@@ -190,11 +190,11 @@ header .wrapper {
   padding-bottom: 1rem;
   padding-left: 1.5rem;
   font-size: 10.5pt;
-  background:rgb(74, 74, 77);
+  background:rgb(58, 61, 64);
   border-radius: 4px 4px;
   display: none;
   opacity: 0;
-  box-shadow: #020202;
+  box-shadow: 2px 2px 20px 2px var(--header-bg);
 }
 .main-nav li > ul.dropdown-menu.show {
   display: grid;
