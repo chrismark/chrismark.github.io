@@ -146,6 +146,7 @@ header {
   top: 1.1rem;
   left: 1rem;
   align-self: center;
+  min-width: 155px;
 }
 
 header .wrapper {
@@ -312,7 +313,7 @@ div.swiper-pagination span.swiper-pagination-bullet {
   text-shadow: 1px 1px #020202;
 }
 .movie-info .movie-meta > span {
-  margin-right: 1rem;
+  margin-right: .7rem;
 }
 .movie-info .movie-meta > span:not(.movie-quality) {
   text-shadow: 2px 2px 5px #414141;
@@ -587,11 +588,6 @@ footer .copyright {
 }
 
 @media (max-width: 780px) {
-  .section-heading .filter-types {
-    display: block;
-    top: 0;
-    margin-top: .4rem;
-  }
   .listings, .movie-info {
     width: 95%;
   }
@@ -626,6 +622,11 @@ footer .copyright {
 }
 
 @media (max-width: 578px) {
+  .section-heading .filter-types {
+    display: block;
+    top: 0;
+    margin-top: .4rem;
+  }
   .movie-info > .movie-description {
     display: none;
   }
@@ -642,8 +643,42 @@ footer .copyright {
 }
 
 @media (max-width: 425px) {
+  .movie-info {
+    top: 35%;
+  }
+  .movie-info h3 {
+    font-size: 25pt;
+    line-height: 1.8rem;
+
+  }
   .section-recommendations .section-content.show, .section-container:not(.section-recommendations) .section-content {
     grid-template-columns: 1fr 1fr;
-    column-gap: 5px;
+  }
+}
+@media (max-width: 320px) {
+  .movie-info {
+    top: 30%;
+  }
+  .movie-info h3 {
+    font-size: 18pt;
+  }
+  .section-recommendations .section-content.show, .section-container:not(.section-recommendations) .section-content {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 320px) {
+  header form.search-field {
+    display: none;
+  }
+  .section-heading {
+    display: block;
+  }
+  .section-heading h2 {
+    padding-right: 0;
+    font-size: large;
+  }
+  .section-heading .filter-types a {
+    display: block;
+    margin: 0px 0px 5px 0px;
   }
 }
