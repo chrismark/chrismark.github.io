@@ -8,7 +8,6 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" integrity="sha512-uCQmAoax6aJTxC03VlH0uCEtE0iLi83TW1Qh6VezEZ5Y17rTrIE+8irz4H4ehM7Fbfbm8rb30OkxVkuwhXxrRg==" crossorigin="anonymous" referrerpolicy="no-referrer" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel="stylesheet" type="text/css" href="src/index.css" />
-    <script type="text/javascript" src="src/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Site</title>
   </head>
@@ -16,13 +15,39 @@
     <div class="container-fluid">
       <header>
         <div class="wrapper">
-          <a id="nav-logo" href="/" aria-label="Home"><img alt="Test Site Logo" width="155" height="40" class="lazyload" data-src="src/assets/test-site.svg" /></a>
+          <a id="nav-logo" href="/" aria-label="Home"><img alt="Test Site Logo" width="155" height="40" src="src/assets/test-site.svg" /></a>
           <a id="dropdown-toggle" role="button" aria-label="Show dropdown menu" aria-hidden="true"><i class="bx bx-chevron-right bx-md" id="arrow"></i></a>
           <nav class="main-nav dropdown" id="main-nav">
             <ul>
               <li><a href="/home">Home</a></li>
-              <li><a href="/genre">Genre</a></li>
-              <li><a href="/country">Country</a></li>
+              <li class="nav-genre">
+                <a href="/genre">Genre</a>
+                <ul class="dropdown-menu" id="genres-dropdown-menu">
+                  <li><a href="/genre/action">Action</a></li>
+                  <li><a href="/genre/adventure">Adventure</a></li>
+                  <li><a href="/genre/animation">Animation</a></li>
+                  <li><a href="/genre/biography">Biography</a></li>
+                  <li><a href="/genre/costume">Costume</a></li>
+                  <li><a href="/genre/comedy">Comedy</a></li>
+                  <li><a href="/genre/crime">Crime</a></li>
+                  <li><a href="/genre/documentary">Documentary</a></li>
+                  <li><a href="/genre/drama">Drama</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/country">Country</a>
+                <ul class="dropdown-menu" id="country-dropdown-menu">
+                  <li><a href="/country/argentina">Argentina</a></li>
+                  <li><a href="/country/australia">Australia</a></li>
+                  <li><a href="/country/austria">Austria</a></li>
+                  <li><a href="/country/belgium">Belgium</a></li>
+                  <li><a href="/country/brazil">Brazil</a></li>
+                  <li><a href="/country/canada">Canada</a></li>
+                  <li><a href="/country/china">China</a></li>
+                  <li><a href="/country/czech-republic">Czech Republic</a></li>
+                  <li><a href="/country/denmark">Eenmark</a></li>
+                </ul>
+              </li>
               <li><a href="/movies">Movies</a></li>
               <li><a href="/tv-series">TV Series</a></li>
               <li><a href="/top-imdb">Top IMDb</a></li>
@@ -2127,6 +2152,8 @@
       });
     </script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="src/script.js"></script>
   </body>
   
 </html>

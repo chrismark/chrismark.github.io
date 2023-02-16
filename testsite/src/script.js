@@ -15,6 +15,20 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   console.log('DOMContentLoaded');
 
+  const dropdownMenus = Array.from(document.getElementsByClassName("dropdown-menu"));
+  const show = function(e) {
+    const ddmId = this.getAttribute("data-dropdown-menu-id");
+    this.nextElementSibling.classList.add("show");
+  };
+  const hide = function(e) {
+    const ddmId = this.getAttribute("data-dropdown-menu-id");
+    this.childNodes[3].classList.remove("show");
+  };
+  dropdownMenus.forEach((e) => {
+    e.previousElementSibling.addEventListener("mouseenter", show);
+    e.parentNode.addEventListener("mouseleave", hide);
+  })
+
   const filterBtns = Array.from(document.getElementsByClassName("filter-type-btn"));
   const sectionContents = Array.from(document.getElementsByClassName("section-recommendations")[0]?.getElementsByClassName("section-content"));
   const filterBtnHandler = function (e) {
