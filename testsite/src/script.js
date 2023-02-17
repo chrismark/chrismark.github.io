@@ -1,34 +1,49 @@
 document.addEventListener("DOMContentLoaded", () => {
+  console.log('DOMContentLoaded');
+
   const dropdownBtn = document.getElementById("dropdown-toggle");
   const dropdownMenu = document.getElementById("main-nav");
   const toggleArrow = document.getElementById("arrow");  
+  const searchField = document.getElementById("search-field");
+  const searchFieldInput = searchField.getElementsByTagName("input")[0];
+  const header = document.getElementsByTagName("header")[0];
 
+  // at 425px width, search field shows/hides after clicking the search icon
+  searchField.addEventListener("click", function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+    header.classList.add("search");
+    searchFieldInput.focus();
+  });
+  searchFieldInput.addEventListener("blur", function (e) {
+    header.classList.remove("search");
+  })
+
+  // show/hide main dropdown menu
   const toggleDropdown = function () {
     dropdownMenu.classList.toggle("show");
-    toggleArrow.classList.toggle("arrow");
   };
-
   dropdownBtn.addEventListener("click", function (e) {
     console.log('Click');
     e.stopPropagation();
     toggleDropdown();
   });
-  console.log('DOMContentLoaded');
 
+  // show/hide genre and country dropdown menu
   const dropdownMenus = Array.from(document.getElementsByClassName("dropdown-menu"));
   const show = function(e) {
-    const ddmId = this.getAttribute("data-dropdown-menu-id");
     this.nextElementSibling.classList.add("show");
   };
   const hide = function(e) {
-    const ddmId = this.getAttribute("data-dropdown-menu-id");
     this.childNodes[3].classList.remove("show");
   };
   dropdownMenus.forEach((e) => {
     e.previousElementSibling.addEventListener("mouseenter", show);
+    e.previousElementSibling.addEventListener("click", show);
     e.parentNode.addEventListener("mouseleave", hide);
   })
 
+  // recommendations filter buttons
   const filterBtns = Array.from(document.getElementsByClassName("filter-type-btn"));
   const sectionContents = Array.from(document.getElementsByClassName("section-recommendations")[0]?.getElementsByClassName("section-content"));
   const filterBtnHandler = function (e) {
@@ -56,7 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // threshold represents the viewable area of the target element in the screen
   // 1 means element is fully viewable in screen
   }, { threshold: [1] });
-  
   observer.observe(toggleArrow);
 
 });
