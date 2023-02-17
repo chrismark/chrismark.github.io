@@ -32,14 +32,23 @@ document.addEventListener("DOMContentLoaded", () => {
   // show/hide genre and country dropdown menu
   const dropdownMenus = Array.from(document.getElementsByClassName("dropdown-menu"));
   const show = function(e) {
+    // highlight Genre/Country menu link
+    this.classList.add('hover');
+    // show dropdown
     this.nextElementSibling.classList.add("show");
   };
   const hide = function(e) {
+    // remove highlight from Genre/Country menu link
+    this.childNodes[1].classList.remove("hover");
+    // hide dropdown
     this.childNodes[3].classList.remove("show");
   };
   dropdownMenus.forEach((e) => {
     e.previousElementSibling.addEventListener("mouseenter", show);
+    // add click for touch screen
     e.previousElementSibling.addEventListener("click", show);
+    // attach mouseleave on parent <li> element so that it triggers when user moves/clicks outside of <li>'s
+    // children which includes the dropdown menu
     e.parentNode.addEventListener("mouseleave", hide);
   })
 
@@ -48,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const sectionContents = Array.from(document.getElementsByClassName("section-recommendations")[0]?.getElementsByClassName("section-content"));
   const filterBtnHandler = function (e) {
     e.stopPropagation();
-    console.log(this.classList);
     const type = Array.from(this.classList).filter((e) => e != "filter-type-btn" && e != "selected");
     // only highlight filter-type-btn of this particular 'type'
     filterBtns.forEach((e) => e.classList.contains(type) ? e.classList.add("selected") : e.classList.remove("selected"));
@@ -67,6 +75,12 @@ document.addEventListener("DOMContentLoaded", () => {
       if (dropdownMenu.classList.contains('show')) {
         toggleDropdown();
       }
+      // hide country/genre dropdown
+      dropdownMenus.forEach((dm) => {
+        if (dm.classList.contains("show")) {
+          dm.parentNode.dispatchEvent(new Event("mouseleave"));
+        }
+      });
     }
   // threshold represents the viewable area of the target element in the screen
   // 1 means element is fully viewable in screen

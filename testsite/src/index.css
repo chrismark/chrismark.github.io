@@ -110,7 +110,7 @@ a {
   color: var(--link-text-color);
   text-decoration: inherit;
 }
-a:hover {
+a:not([role=menuitem]):hover, a.hover {
   color: var(--link-text-hover-color);
 }
 
